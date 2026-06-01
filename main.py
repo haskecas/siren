@@ -35,9 +35,9 @@ print(alert_status)
 bot = telebot.TeleBot(BOT_TOKEN)
 status = alerts_client.get_air_raid_alert_status(13).status
 startv = True if status in ["active", "partly"] else False if status == "no_alert" else False
-ifalert = startv
+ifalert = startvf
 print(ifalert)
-bot.send_message(CHAT_ID, 'Бот запущений!')
+bot.send_message(ADMIN_ID, 'Бот запущений!')
 
 keep_alive()
 
